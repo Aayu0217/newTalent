@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  font-family: var(--font-plus-jakarta-sans);
+}
+
+body {
+  /* color: var(--foreground); */
+  /* background: var(--background); */
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+/* Custom Active Dot Styles */
+.softwareSlider .slick-dots li.slick-active div {
+  background-color: #3B5999;
+}
+
+.softwareSlider .slick-dots li div {
+  width: 26px;
+  height: 4px;
+  background-color: #d1d5db;
+  border-radius: unset;
+}
+
+.softwareSlider .slick-current .group {
+  background-color: #3B5999;
+}
+
+.softwareSlider .slick-current .customimg {
+  background: white;
+}
+
+.softwareSlider .slick-current .customtext {
+  color: white;
+}
